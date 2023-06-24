@@ -61,3 +61,19 @@
 #message {
     resize: vertical;
 }
+
+.btn {
+width: 90%;
+height: 1.5cm;
+align-content: left;
+margin: 15px;
+}
+
+/* .container{
+    border-radius: 10px;
+    margin: 20px;
+    background-color: rgb(227, 227, 227);
+    padding: 30px;
+    max-width: auto;
+   margin: auto;
+} */
