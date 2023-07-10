@@ -5,48 +5,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/style.css" rel="stylesheet" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-</head>
-<title> Sign in </title>
+    <title> Sign in </title>
 </head>
 
 <body>
     <header></header>
 
-    <main class="content">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <h3> Let's talk about everything!</h3>
-                    <p> psum dolor sit amet, consectetur adipiscing elit. Fusce et nulla vel erat tempor volutpat. Duis
-                        . </p>
-                    <img src="images/undraw-contact.svg" width="100%">
-                </div>
-
-                <div class="col-md-6">
-                    <input type="text" id="user_name" name="user_name" placeholder="Username" class="btn btn-light">
-                    <br>
-                    <input type="email" id="user_email" name="user_email" placeholder="Email" class="btn btn-light">
-                    <br>
-                    <input type="text" id="subject" name="subject" placeholder="subject" class="btn btn-light"> <br>
-                    <textarea name="message" placeholder="Write your Message" class="btn btn-light"></textarea> <br>
-                    <button type="button" class="btn btn-dark" style="width: fit-content"> Send Message </button>
-                </div>
-            </div>
-            <br>
-            <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57242780.680847235!2d-62.01078259791304!3d28.873910169648028!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15577f59d102b195%3A0x88b94ee8ddb7ab18!2sBaghdad%20Business%20School%20(BBS)!5e0!3m2!1sen!2siq!4v1687603248248!5m2!1sen!2siq"
-            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <main class="wrapper">
+        <div>
+            <h3> Let's talk about everything!</h3>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero nesciunt animi quisquam nulla explicabo.
+                Quaerat quos laudantium incidunt molestiae sequi atque, nemo repellat aut aspernatur magnam dolorem
+                dolore, culpa at!
+            </p>
+            <img src="images/undraw-contact.svg" width="60%">
         </div>
-    </main>
-    </main>
 
+        <form class="mb-5" method="post" id="contactForm" name="contactForm" onsubmit="validateForm(event)">
+            <input type="text" id="user_name" name="user_name" placeholder="Username" class="btn_">
+            <br>
+            <input type="text" id="user_email" name="user_email" placeholder="Email" class="btn_">
+            <br>
+            <input type="text" id="subject" name="ubject" placeholder="Subject" class="btn_"> <br>
+            <textarea id="message" name="message" placeholder="Write your Message" class="btn_"></textarea> <br>
+            <button type="submit" class="Sendbtm"> Send Message </button>
+
+            <div id="err_msg" style="padding-top: 10px; color: red; font-family: 'Gill Sans';"></div>
+            <div id="success_msg" style="display:none; padding: 10px; color: green; font-family: 'Gill Sans';">
+                Successfully Submitted Data! </div>
+        </form>
+
+    </main>
     <footer></footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-        crossorigin="anonymous"></script>
+    <script src="js/script.js"> </script>
 </body>
 
 </html>
